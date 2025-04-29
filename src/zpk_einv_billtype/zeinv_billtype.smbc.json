@@ -1,0 +1,35 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Khai báo Billing Type xuất hóa đơn điện tử",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "serviceConfiguration": {
+    "serviceBinding": "ZEINV_UI_BILLTYPE_O4",
+    "serviceName": "ZEINV_UI_BILLTYPE_O4",
+    "serviceVersion": "0001",
+    "rootEntitySet": "BillingTypeAll",
+    "name": "Billing Type",
+    "configurationGroup": "",
+    "skipRootEntity": true
+  },
+  "appConfiguration": {
+    "listReport": {},
+    "objectPages": [
+      {
+        "entitySet": "BillingTypeAll",
+        "variantManagement": "control"
+      }
+    ],
+    "tableSettings": [
+      {
+        "entitySet": "BillingType",
+        "tableType": "gridTable",
+        "selectionMode": "auto",
+        "rowCountMode": "auto",
+        "creationModeName": "creationRow"
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+define service ZEINV_BILLTYPE {
+  expose ZEINV_C_BILLTYPE_S as BillingTypeAll;
+  expose ZEINV_C_BILLTYPE_D as BillingType;
+}

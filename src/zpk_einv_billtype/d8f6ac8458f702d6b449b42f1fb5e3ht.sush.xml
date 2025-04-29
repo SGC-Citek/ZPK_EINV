@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SUSH" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <HEAD>
+    <NAME>D8F6AC8458F702D6B449B42F1FB5E3</NAME>
+    <TYPE>HT</TYPE>
+    <DISPLAY_NAME>R3TR G4BA ZEINV_UI_BILLTYPE_O4</DISPLAY_NAME>
+    <DEVCLASS>ZPK_EINV_BILLTYPE</DEVCLASS>
+   </HEAD>
+  </asx:values>
+ </asx:abap>
+</abapGit>

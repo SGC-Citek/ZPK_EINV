@@ -1,0 +1,27 @@
+managed implementation in class zbp_einv_i_hoadon_bh unique;
+strict ( 2 );
+
+define behavior for ZEINV_I_HOADON_BH //alias <alias_name>
+persistent table zeinv_tb_hd
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) uuid;
+  association _Item { create; }
+}
+
+define behavior for ZEINV_I_HOADON_BH_I //alias <alias_name>S
+persistent table zeinv_tb_hd_i
+lock dependent by _Header
+authorization dependent by _Header
+//etag master <field_name>
+{
+  update;
+  delete;
+  field ( readonly ) uuid;
+  association _Header;
+}

@@ -1,0 +1,36 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Maintain Mapping debit/credit indicator",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "serviceConfiguration": {
+    "serviceBinding": "ZEINV_UI_DEBCRE_O4",
+    "serviceName": "ZEINV_UI_DEBCRE_O4",
+    "serviceVersion": "0001",
+    "rootEntitySet": "MapDebCre",
+    "name": "Mapping debit/credit indicator",
+    "configurationGroup": "",
+    "skipRootEntity": true
+  },
+  "appConfiguration": {
+    "listReport": {},
+    "objectPages": [
+      {
+        "entitySet": "MapDebCre",
+        "variantManagement": "control"
+      }
+    ],
+    "tableSettings": [
+      {
+        "entitySet": "MappingDebitCredit",
+        "tableType": "gridTable",
+        "selectionMode": "single",
+        "rowCountMode": "auto",
+        "creationModeName": "inlineCreationRows",
+        "createAtEnd": true
+      }
+    ]
+  }
+}

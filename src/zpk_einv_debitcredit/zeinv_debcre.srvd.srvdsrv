@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZEINV_I_DEBCRE_S'
+define service ZEINV_DEBCRE {
+  expose ZEINV_I_DEBCRE_S as MapDebCre;
+  expose ZEINV_I_DEBCRE as MappingDebitCredit;
+}

@@ -1,0 +1,5 @@
+@MappingRole: true
+define role ZI_ZEIV02_CANG {
+  grant select on ZI_ZEIV02_CANG
+  where ( ) = ASPECT pfcg_auth ( 'S_TABU_NAM', ACTVT = '03', TABLE = 'ZI_ZEIV02_CANG' );
+}

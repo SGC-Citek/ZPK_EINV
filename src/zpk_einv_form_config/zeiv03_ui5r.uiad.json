@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "ZEIV03 - Mapping nguồn dữ liệu với ký hiệu, mẫu số Hóa đơn",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zeinvconfigformfe"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_F4E5E03FCDB098F0EBBD9FB03E2FFAA1BD9D1379_TM",
+    "semanticObject": "zeinv_config",
+    "action": "form",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_F4E5E03FCDB098F0EBBD9FB03E2FFAA1BD9D1379_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ZEIV03 - Mapping nguồn dữ liệu với ký hiệu, mẫu số Hóa đơn",
+        "subtitle": "ZEIV03"
+      }
+    }
+  ]
+}

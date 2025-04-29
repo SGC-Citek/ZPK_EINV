@@ -1,0 +1,98 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'BillingType',
+    typeNamePlural: 'BillingTypes',
+    title: {
+      type: #STANDARD,
+      label: 'Billing Type',
+      value: 'Billingtype'
+    }
+  }
+}
+annotate view ZEINV_C_BILLTYPE_D with
+{
+  @UI.identification: [ {
+    position: 10
+  } ]
+  @UI.lineItem: [ {
+    position: 10
+  } ]
+  @UI.facet: [ {
+    id: 'ZEINV_I_BILLTYPE_D',
+    purpose: #STANDARD,
+    type: #IDENTIFICATION_REFERENCE,
+    label: 'Billing Type',
+    position: 10
+  } ]
+  Billingtype;
+  @UI.lineItem: [ {
+     position: 20
+   } ]
+  @UI.hidden: true
+  billingdocumenttypename;
+
+  @UI.identification: [ {
+    position: 30
+  } ]
+  @UI.lineItem: [ {
+    position: 30
+  } ]
+  Orderreason;
+
+  @UI.identification: [ {
+    position: 40
+  } ]
+  @UI.lineItem: [ {
+    position: 40
+  } ]
+  Billnghiepvu;
+//  @UI.identification: [ {
+//  position: 41
+//  } ]
+//  @UI.lineItem: [ {
+//    position: 41
+//  } ]
+//  BillNghiepVu_Text;
+
+  @UI.identification: [ {
+    position: 50
+  } ]
+  @UI.lineItem: [ {
+    position: 50
+  } ]
+  Noprice;
+
+  @UI.identification: [ {
+    position: 60
+  } ]
+  @UI.lineItem: [ {
+    position: 60
+  } ]
+  Nofidoc;
+
+  @UI.identification: [ {
+    position: 70
+  } ]
+  @UI.lineItem: [ {
+    position: 70
+  } ]
+  Autoeinvoice;
+  
+    @UI.identification: [ {
+    position: 21
+  } ]
+  @UI.lineItem: [ {
+    position: 21
+  } ]
+    @EndUserText.label: 'Additional Material Group'
+  Mvgr1;
+    @UI.identification: [ {
+    position: 81
+  } ]
+  @UI.lineItem: [ {
+    position: 81
+  } ]
+  @EndUserText.label: 'Note Additional Material Group'
+  NoteMvgr;
+}

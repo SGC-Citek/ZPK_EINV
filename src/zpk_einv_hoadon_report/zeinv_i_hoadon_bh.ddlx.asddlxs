@@ -1,0 +1,131 @@
+@Metadata.layer: #CORE
+annotate view ZEINV_I_HOADON_BH with
+{
+  @UI                    : {
+
+  facet                 : [
+          { id          : 'documentCollection',
+            type        : #COLLECTION,
+            label       : 'Document info',
+            position    : 10
+          },
+          { id          : 'documentInfo',
+            purpose     : #STANDARD,
+            type        : #FIELDGROUP_REFERENCE,
+            parentId    : 'documentCollection',
+            position    : 10,
+            targetQualifier: 'documentInfo'
+          },
+          { id          : 'valueCollection',
+            type        : #COLLECTION,
+            label       : 'Value information',
+            position    : 20
+          },
+          { id          : 'valueGeneral',
+            purpose     : #STANDARD,
+            type        : #FIELDGROUP_REFERENCE,
+            parentId    : 'valueCollection',
+            position    : 10,
+            targetQualifier: 'valueGeneral'
+          },
+          { id          : 'buyerCollection',
+            type        : #COLLECTION,
+            label       : 'Buyer information',
+            position    : 30
+          },
+          { id          : 'buyerGeneral',
+            purpose     : #STANDARD,
+            type        : #FIELDGROUP_REFERENCE,
+            parentId    : 'buyerCollection',
+            position    : 10,
+            targetQualifier: 'buyerGeneral'
+          },
+          { id          : 'itemList',
+            purpose     : #STANDARD,
+            type        : #LINEITEM_REFERENCE,
+            label       : 'Item List',
+            position    : 40,
+            targetElement : '_Item'
+          }
+          ] }
+  @UI.lineItem: [{ position: 10 }]
+  uuid;
+  @UI.lineItem: [{ position: 20 }]
+  einvoiceno;
+  @UI.lineItem: [{ position: 30 }]
+  @UI.fieldGroup         : [{ qualifier: 'documentInfo', position: 1 }]
+  einvoiceno_long;
+  @UI.lineItem: [{ position: 40 }]
+  doctype;
+  @UI.lineItem: [{ position: 50 }]
+  sourcetype;
+  @UI.lineItem: [{ position: 60 }]
+  zserial;
+  @UI.lineItem: [{ position: 70 }]
+  zpattern;
+  @UI.lineItem: [{ position: 80 }]
+  @UI.fieldGroup         : [{ qualifier: 'documentInfo', position: 2 }]
+  uuidstatus;
+  @UI.hidden: true
+  UuidStatusText;
+  @UI.lineItem: [{ position: 90 }]
+  @UI.fieldGroup         : [{ qualifier: 'documentInfo', position: 50 }]
+  ngayhoadon;
+  @UI.lineItem: [{ position: 100 }]
+  customer;
+  @UI.lineItem: [{ position: 110 }]
+  buyer;
+  @UI.lineItem: [{ position: 120 }]
+  tendonvi;
+  @UI.lineItem: [{ position: 130 }]
+  @EndUserText.label     : 'Address'
+  @UI.fieldGroup         : [{ qualifier: 'buyerGeneral', position: 30 }]
+  buyeraddress;
+  @UI.lineItem: [{ position: 140 }]
+  @EndUserText.label     : 'Email'
+  @UI.fieldGroup         : [{ qualifier: 'buyerGeneral', position: 50 }]
+  buyeremail;
+  @UI.lineItem: [{ position: 150 }]
+  @EndUserText.label     : 'Tên công ty'
+  @UI.fieldGroup         : [{ qualifier: 'buyerGeneral', position: 11 }]
+  buyercompany;
+  @EndUserText.label     : 'VAT Register Number'
+  @UI.lineItem: [{ position: 160 }]
+  @UI.fieldGroup         : [{ qualifier: 'buyerGeneral', position: 40 }]
+  buyervatnumber;
+  @EndUserText.label     : 'Địa chỉ giao hàng'
+  @UI.lineItem: [{ position: 170 }]
+  @UI.fieldGroup         : [{ qualifier: 'documentInfo', position: 50 }]
+  shippingaddress;
+  @EndUserText.label     : 'Thành tiền'
+  @UI.lineItem: [{ position: 180 }]
+  @UI.fieldGroup         : [{ qualifier: 'valueGeneral', position: 10 }]
+  amountbeforetax;
+  @EndUserText.label     : 'Tiền thuế'
+  @UI.lineItem: [{ position: 190 }]
+  @UI.fieldGroup         : [{ qualifier: 'valueGeneral', position: 20, label: 'Tiền thuế' }]
+  taxamount;
+  @UI.lineItem: [{ position: 200 }]
+  @UI.fieldGroup         : [{ qualifier: 'valueGeneral', position: 30 }]
+  @EndUserText.label     : 'Tổng tiền thanh toán'
+  amountaftertax;
+  @UI.lineItem: [{ position: 210 }]
+  paymentmethod;
+  @UI.lineItem: [{ position: 219 }]
+  @UI.fieldGroup         : [{ qualifier: 'valueGeneral', position: 40 }]
+  companycode;
+  @UI.lineItem: [{ position: 220 }]
+  @UI.fieldGroup         : [{ qualifier: 'documentInfo', position: 50 }]
+  billingdocument;
+  @UI.lineItem: [{ position: 230 }]
+  @UI.fieldGroup         : [{ qualifier: 'documentInfo', position: 50 }]
+  accountingdocument;
+  @UI.lineItem: [{ position: 240 }]
+  @UI.fieldGroup         : [{ qualifier: 'documentInfo', position: 50 }]
+  accountingdocumentyear;
+  @UI.lineItem: [{ position: 250 }]
+  @UI.fieldGroup         : [{ qualifier: 'documentInfo', position: 50 }]
+  transactioncurrency;
+  @UI.lineItem: [{ position: 260 }]
+  ghichu;
+}

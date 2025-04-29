@@ -1,0 +1,74 @@
+managed with additional save implementation in class ZBP_I_MAP_DEBCRE_S unique;
+strict;
+with draft;
+define behavior for ZEINV_I_DEBCRE_S alias MapDebCre
+draft table ZEINV_TB_DEBCR_S
+with unmanaged save
+lock master total etag LastChangedAtMax
+authorization master( global )
+
+{
+  field ( readonly )
+   SingletonID;
+
+  field ( notrigger )
+   SingletonID,
+   HideTransport,
+   LastChangedAtMax;
+
+
+  update;
+  internal create;
+  internal delete;
+
+  draft action ( features : instance ) Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+  action ( features : instance ) SelectCustomizingTransptReq parameter D_SelectCustomizingTransptReqP result [1] $self;
+
+  association _MappingDebitCredit { create ( features : instance ); with draft; }
+}
+
+define behavior for ZEINV_I_DEBCRE alias MappingDebitCredit
+persistent table ZEINV_TB_DEBCRE
+draft table ZEINV_TB_DEBCR_D
+lock dependent by _MapDebCre
+authorization dependent by _MapDebCre
+
+{
+  field ( mandatory : create )
+   Type;
+
+  field ( readonly )
+   SingletonID;
+
+  field ( readonly : update )
+   Type;
+
+  field ( notrigger )
+   SingletonID;
+
+
+  update( features : global );
+  delete( features : global );
+
+  factory action ( features : instance ) CopyMappingDebitCredit parameter ZEINV_D_DEBCRE [1];
+
+  mapping for ZEINV_TB_DEBCRE
+  {
+    Type = TYPE;
+    Description = DESCRIPTION;
+    Einvoicequanity = EINVOICEQUANITY;
+    Netpricebeforediscount = NETPRICEBEFOREDISCOUNT;
+    Netpriceafterdiscount = NETPRICEAFTERDISCOUNT;
+    Amountbeforetax = AMOUNTBEFORETAX;
+    Taxamount = TAXAMOUNT;
+    Amountaftertax = AMOUNTAFTERTAX;
+  }
+
+  association _MapDebCre { with draft; }
+
+  validation ValidateTransportRequest on save ##NOT_ASSIGNED_TO_DETACT { create; update; delete; }
+}

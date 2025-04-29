@@ -1,0 +1,5 @@
+@EndUserText.label: 'Báo cáo hoá đơn điện tử'
+define service ZEINV_HOADON_RP {
+  expose ZEINV_I_HOADON_RP;
+  expose ZEINV_I_HOADON_RP_I;
+}

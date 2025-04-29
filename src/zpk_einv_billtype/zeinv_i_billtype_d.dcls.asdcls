@@ -1,0 +1,5 @@
+@MappingRole: true
+define role ZEINV_I_BILLTYPE_D {
+  grant select on ZEINV_I_BILLTYPE_D
+  where ( ) = ASPECT pfcg_auth ( 'S_TABU_NAM', ACTVT = '03', TABLE = 'ZEINV_I_BILLTYPE_D' );
+}

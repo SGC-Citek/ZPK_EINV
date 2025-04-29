@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Phiếu xuất kho kiêm vận chuyển nội bộ",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zeinvpxk"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_89BF12B9961260D1CC6C827DC47E9BB6C86C0EE2_TM",
+    "semanticObject": "zeinv_pxk",
+    "action": "manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_89BF12B9961260D1CC6C827DC47E9BB6C86C0EE2_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Phiếu xuất kho kiêm vận chuyển nội bộ",
+        "subtitle": "ZEIV02"
+      }
+    }
+  ]
+}

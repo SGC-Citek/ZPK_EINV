@@ -1,0 +1,19 @@
+managed implementation in class zbp_einv_i_vnpt_auth unique;
+strict ( 2 );
+
+define behavior for ZEINV_I_VNPT_AUTH //alias <alias_name>
+persistent table zeinv_vnpt_auth
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+
+  field ( readonly : update )
+  companycode;
+
+  field ( readonly : update )
+  plant;
+  create;
+  update;
+  delete;
+}

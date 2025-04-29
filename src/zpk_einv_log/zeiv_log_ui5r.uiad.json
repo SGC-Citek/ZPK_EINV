@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "ZEINV_LOG",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zeivlog"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_35373D0541EA40EBCD24AAA91B6BA404E34DFD5C_TM",
+    "semanticObject": "zeivlog",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_35373D0541EA40EBCD24AAA91B6BA404E34DFD5C_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ZEINV_LOG",
+        "subtitle": "{{flpSubtitle}}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Config auth for E-Invoice VNPT'
+define service ZEINV_VNPT_AUTH {
+  expose ZEINV_I_VNPT_AUTH;
+}

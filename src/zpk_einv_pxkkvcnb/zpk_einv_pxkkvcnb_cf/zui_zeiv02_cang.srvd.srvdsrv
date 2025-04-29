@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZI_ZEIV02_CANG_S'
+define service ZUI_ZEIV02_CANG {
+  expose ZI_ZEIV02_CANG_S as TableZeiv02CANGAll;
+  expose ZI_ZEIV02_CANG as TableZeiv02CANG;
+}

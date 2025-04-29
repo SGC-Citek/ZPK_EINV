@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZEINV_VNPT</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>Message class</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp;1 &amp;2 &amp;3 &amp;4</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Tài khoản đăng nhập sai hoặc không có quyền thêm mới hóa đơn</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Chuỗi token không đúng định dạng</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Dữ liệu xml đầu vào không đúng quy định</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>User name không phù hợp, không tìm thấy company tương ứng cho user.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Có lỗi xảy ra</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Dải hóa đơn không đủ số hóa đơn cho lô phát hành hoặc không tìm thấy Fkey</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Thông tin về Username/pass không hợp lệ</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>Hóa đơn đã được thay thế rồi.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>Trạng thái hóa đơn không được thay thế</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>Lô có số hóa đơn vượt quá số lượng cho phép</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>Không tìm thấy hóa đơn</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>012</MSGNR>
+     <TEXT>Fkey truyền lên rỗng</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>013</MSGNR>
+     <TEXT>Danh sách hóa đơn tồn tại hóa đơn trùng Fkey</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>014</MSGNR>
+     <TEXT>Lỗi trong quá trình thực hiện cấp số hóa đơn</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>015</MSGNR>
+     <TEXT>Danh sách Fkey đã phát hành</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>018</MSGNR>
+     <TEXT>Dải hóa đơn không đủ số hóa đơn cho lô phát hành</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>019</MSGNR>
+     <TEXT>Pattern truyền vào không giống với hóa đơn cần điều chỉnh</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>020</MSGNR>
+     <TEXT>Pattern và serial không phù hợp</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>021</MSGNR>
+     <TEXT>Dải hóa đơn cũ đã hết</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>022</MSGNR>
+     <TEXT>Hóa đơn đã được thay thế rồi. Không thể thay thế nữa.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>023</MSGNR>
+     <TEXT>Trạng thái hóa đơn không được thay thế</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>024</MSGNR>
+     <TEXT>Lỗi trong quá trình thực hiện cấp số hóa đơn</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>025</MSGNR>
+     <TEXT>Pattern truyền vào không giống với hóa đơn cần điều chỉnh</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>026</MSGNR>
+     <TEXT>Dải hóa đơn hết, User/Account không có quyền với Serial/Pattern và serial</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>029</MSGNR>
+     <TEXT>Lỗi chứng thư hết hạn</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>030</MSGNR>
+     <TEXT>Danh sách hóa đơn tồn tại ngày hóa đơn nhỏ hơn ngày hóa đơn đã phát hành</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>035</MSGNR>
+     <TEXT>Công ty đăng ký DK01 cả có mã, không mã. Tạo cả ký hiệu cả 2 dải có mã và</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>060</MSGNR>
+     <TEXT>Chỉ được phép điều chỉnh hóa đơn cùng loại (Có mã / Không mã).</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>061</MSGNR>
+     <TEXT>Chỉ được phép điều chỉnh hóa đơn cùng loại (HD GTGT / HD bán hàng...).</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEINV_VNPT</ARBGB>
+     <MSGNR>062</MSGNR>
+     <TEXT>Không được dùng không mã đăng ký gửi bảng tổng hợp thay thế, điều chỉnh c</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

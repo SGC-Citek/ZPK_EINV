@@ -1,0 +1,4 @@
+@EndUserText.label: 'Loại thuế suất xuất hoá đơn điện tử'
+define service ZEINV_TAXCODE {
+  expose ZEINV_I_TAXCODE;
+}

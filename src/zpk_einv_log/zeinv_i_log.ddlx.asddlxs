@@ -1,0 +1,23 @@
+@Metadata.layer: #CORE
+annotate view ZEINV_i_LOG with
+{
+  @UI.lineItem: [{ position: 10 }]
+  log_id;
+  @UI.lineItem: [{ position: 20 }]
+  uuid;
+  @UI.lineItem: [{ position: 30 }]
+  type;
+  @UI.lineItem: [{ position: 40 }]
+  function;
+  @UI.lineItem: [{ position: 50 }]
+  message;
+  @UI.hidden: true
+  body;
+  @UI.lineItem: [{ position: 60 }]
+  logtime;
+  @UI.lineItem: [{ position: 70 }]
+  logdate;
+  @UI.lineItem: [{ position: 80 }]
+  loguser;
+
+}

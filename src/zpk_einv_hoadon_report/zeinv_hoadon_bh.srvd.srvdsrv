@@ -1,0 +1,5 @@
+@EndUserText.label: 'Editable hoá đơn điện tử'
+define service ZEINV_HOADON_BH {
+  expose ZEINV_I_HOADON_BH;
+  expose ZEINV_I_HOADON_BH_I;
+}

@@ -1,0 +1,13 @@
+managed implementation in class zbp_einv_i_taxcode unique;
+strict ( 2 );
+
+define behavior for ZEINV_I_TAXCODE //alias <alias_name>
+persistent table zeinv_tb_taxcode
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

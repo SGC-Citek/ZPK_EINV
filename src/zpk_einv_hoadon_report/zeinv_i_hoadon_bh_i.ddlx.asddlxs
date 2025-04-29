@@ -1,0 +1,46 @@
+@Metadata.layer: #CORE
+annotate view ZEINV_I_HOADON_BH_I with
+{
+  @UI.lineItem: [{ position: 10 }]
+  uuid;
+  @UI.lineItem: [{ position: 20 }]
+  itemforeinvoice;
+  @UI.lineItem: [{ position: 30 }]
+  itemtext;
+  @UI.lineItem: [{ position: 40 }]
+  product;
+  @UI.lineItem: [{ position: 50 }]
+  goodtypeineinvoice;
+  @UI.lineItem: [{ position: 60 }]
+  nuocsanxuat;
+  @UI.lineItem: [{ position: 70 }]
+  quycachdonggoi;
+  @UI.lineItem: [{ position: 80 }]
+  nongdohamluong;
+  @UI.lineItem: [{ position: 90 }]
+  batchncc;
+  @UI.lineItem: [{ position: 100 }]
+  hansudung;
+  @UI.lineItem: [{ position: 110 }]
+  transactioncurrency;
+  @UI.lineItem: [{ position: 120 }]
+  netpricebeforediscount;
+  @UI.lineItem: [{ position: 130 }]
+  discountrate;
+  @UI.lineItem: [{ position: 140 }]
+  netpriceafterdiscount;
+  @UI.lineItem: [{ position: 150 }]
+  amountbeforetax;
+  @UI.lineItem: [{ position: 160 }]
+  taxrate;
+  @UI.lineItem: [{ position: 170 }]
+  taxamount;
+  @UI.lineItem: [{ position: 180 }]
+  amountaftertax;
+  @UI.lineItem: [{ position: 190 }]
+  einvoiceunit;
+  @UI.lineItem: [{ position: 200 }]
+  einvoicequanity;
+
+
+}

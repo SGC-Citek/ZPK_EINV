@@ -1,0 +1,72 @@
+managed with additional save implementation in class ZBP_I_ZEIV02_CANG_S unique;
+strict;
+with draft;
+define behavior for ZI_ZEIV02_CANG_S alias TableZeiv02CANGAll
+draft table ZTB_EINV_PX_D_S
+with unmanaged save
+lock master total etag LastChangedAtMax
+authorization master( global )
+
+{
+  field ( readonly )
+   SingletonID;
+
+  field ( features : instance )
+   TransportRequestID;
+
+  field ( notrigger )
+   SingletonID,
+   LastChangedAtMax;
+
+
+  update;
+  internal create;
+  internal delete;
+
+  draft action ( features : instance ) Edit with additional implementation;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+  action ( features : instance ) SelectCustomizingTransptReq parameter D_SelectCustomizingTransptReqP result [1] $self;
+
+  association _TableZeiv02CANG { create ( features : instance ); with draft; }
+
+  side effects {
+    action SelectCustomizingTransptReq affects $self;
+  }
+  }
+
+define behavior for ZI_ZEIV02_CANG alias TableZeiv02CANG ##UNMAPPED_FIELD
+persistent table ZTB_EINV_PXKK_CF
+draft table ZTB_EINV_PXKK_D
+lock dependent by _TableZeiv02CANGAll
+authorization dependent by _TableZeiv02CANGAll
+
+{
+  field ( mandatory : create )
+   Port;
+
+  field ( readonly )
+   SingletonID;
+
+  field ( readonly : update )
+   Port;
+
+  field ( notrigger )
+   SingletonID;
+
+
+  update( features : global );
+  delete( features : global );
+
+  mapping for ZTB_EINV_PXKK_CF
+  {
+    Port = PORT;
+    PortAddress = PORT_ADDRESS;
+  }
+
+  association _TableZeiv02CANGAll { with draft; }
+
+  validation ValidateTransportRequest on save ##NOT_ASSIGNED_TO_DETACT { create; update; delete; }
+}

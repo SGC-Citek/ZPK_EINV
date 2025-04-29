@@ -1,0 +1,5 @@
+@EndUserText.label: 'Config mẫu số ký hiệu cho E-Invoice'
+define service ZEINV_CONFIG {
+  expose ZEINV_I_CONFIG;
+  expose ZEINV_I_SOURCETYPE;
+}

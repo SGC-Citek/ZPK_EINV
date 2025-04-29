@@ -1,0 +1,5 @@
+@EndUserText.label: 'Phiếu xuất kho kiêm vận chuyển nội bộ'
+define service ZEINV_PXKKVCNB {
+  expose ZEINV_I_PXKVCNB;
+  expose ZEINV_I_PXKVCNB_ITEM;
+}

@@ -1,0 +1,37 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'TableZeiv02CANG', 
+    typeNamePlural: 'TableZeiv02CANGs', 
+    title: {
+      type: #STANDARD, 
+      label: 'Table ZEIV02 - Cảng', 
+      value: 'Port'
+    }
+  }
+}
+annotate view ZI_ZEIV02_CANG with
+{
+  @UI.identification: [ {
+    position: 1 
+  } ]
+  @UI.lineItem: [ {
+    position: 1 
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_ZEIV02_CANG', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'Table ZEIV02 - Cảng', 
+    position: 1 
+  } ]
+  Port;
+  
+  @UI.identification: [ {
+    position: 2 
+  } ]
+  @UI.lineItem: [ {
+    position: 2 
+  } ]
+  PortAddress;
+}

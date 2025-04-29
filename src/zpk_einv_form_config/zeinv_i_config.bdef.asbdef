@@ -1,0 +1,22 @@
+managed implementation in class zbp_einv_i_config unique;
+strict ( 2 );
+
+define behavior for ZEINV_I_CONFIG //alias <alias_name>
+persistent table zeinv_tb_config
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  field ( readonly : update )
+  type;
+
+  field ( readonly : update )
+  companycode;
+
+  field ( readonly : update )
+  plant;
+
+  create;
+  update;
+  delete;
+}

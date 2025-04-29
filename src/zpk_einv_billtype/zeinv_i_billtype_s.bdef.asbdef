@@ -1,0 +1,76 @@
+managed with additional save implementation in class ZEINV_BP_BILLTYPE unique;
+strict;
+with draft;
+
+define behavior for ZEINV_I_BILLTYPE_S alias BillingTypeAll
+draft table zeinv_tb_billt_s
+with unmanaged save
+lock master total etag LastChangedAtMax
+authorization master ( global )
+
+{
+  field ( readonly )
+  SingletonID;
+
+  update;
+  internal create;
+  internal delete;
+
+  draft action ( features : instance ) Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+  action ( features : instance ) SelectCustomizingTransptReq parameter D_SelectCustomizingTransptReqP result [1] $self;
+
+  association _BillingType { create ( features : instance ); with draft; }
+}
+
+define behavior for ZEINV_I_BILLTYPE_D alias BillingType
+persistent table zeinv_tb_billtyp
+draft table zeinv_tb_billt_d
+lock dependent by _BillingTypeAll
+authorization dependent by _BillingTypeAll
+
+{
+  field ( readonly )
+  BillingDocumentTypeName;
+
+  field ( readonly )
+  BillNghiepVu_Text;
+
+  field ( mandatory : create )
+  Billingtype;
+
+  field ( readonly )
+  SingletonID;
+
+  field ( readonly : update )
+  Billingtype;
+
+  field ( readonly : update )
+  Orderreason;
+  field ( readonly : update )
+  Mvgr1;
+
+
+  update ( features : global );
+  delete ( features : global );
+
+  mapping for zeinv_tb_billtyp
+    {
+      Billingtype  = BILLINGTYPE;
+      Orderreason  = ORDERREASON;
+      Mvgr1        = mvgr1;
+      Billnghiepvu = BILLNGHIEPVU;
+      Noprice      = NOPRICE;
+      Nofidoc      = NOFIDOC;
+      Autoeinvoice = AUTOEINVOICE;
+      Note         = note;
+      NoteMvgr     = note_mvgr1;
+    }
+
+  association _BillingTypeAll { with draft; }
+
+  validation ValidateTransportRequest on save ##NOT_ASSIGNED_TO_DETACT { create; update; delete; }
+}

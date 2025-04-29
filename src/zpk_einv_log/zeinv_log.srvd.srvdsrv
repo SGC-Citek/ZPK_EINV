@@ -1,0 +1,4 @@
+@EndUserText.label: 'Log for E-Invoice Integration'
+define service ZEINV_LOG {
+  expose ZEINV_i_LOG;
+}

@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Chức năng hoá đơn điện tử",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zeinvhddt"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_4A870A912710068B0586568933CF7720B329B2B5_TM",
+    "semanticObject": "zeinv_hddt",
+    "action": "manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_4A870A912710068B0586568933CF7720B329B2B5_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Chức năng hoá đơn điện tử",
+        "subtitle": "ZEIV01"
+      }
+    }
+  ]
+}

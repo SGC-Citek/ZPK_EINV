@@ -1,0 +1,6 @@
+@EndUserText.label: 'Hoá đơn điện tử'
+define service ZEINV_HOADON_2 {
+  expose ZEINV_I_HOADON;
+  expose ZEINV_I_HOADON_ITEM;
+  expose ZEINV_I_HOADON_RP;
+}

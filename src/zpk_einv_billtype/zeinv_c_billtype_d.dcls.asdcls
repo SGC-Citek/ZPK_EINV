@@ -1,0 +1,5 @@
+@MappingRole: true
+define role ZEINV_C_BILLTYPE_D {
+  grant select on ZEINV_C_BILLTYPE_D
+  where INHERITING CONDITIONS FROM ENTITY ZEINV_I_BILLTYPE_D;
+}

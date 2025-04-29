@@ -1,0 +1,5 @@
+@EndUserText.label: 'Hoá đơn điện tử'
+define service ZEINV_HOADON {
+  expose ZEINV_I_BILLINGSOURCE;
+  expose ZEINV_I_BILLINGSOURCEITEM;
+}

@@ -1,0 +1,93 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'MappingDebitCredit', 
+    typeNamePlural: 'MappingDebitCredits', 
+    title: {
+      type: #STANDARD, 
+      label: 'Mapping debit/credit indicator', 
+      value: 'Type'
+    }
+  }
+}
+annotate view ZEINV_I_DEBCRE with
+{
+  @UI.identification: [ {
+    position: 1 
+  } ]
+  @UI.lineItem: [ {
+    position: 1 
+  }, 
+  {
+    type: #FOR_ACTION, 
+    dataAction: 'CopyMappingDebitCredit', 
+    label: 'Copy Selected Entry', 
+    invocationGrouping: #CHANGE_SET
+  } ]
+  @UI.facet: [ {
+    id: 'ZEINV_I_DEBCRE', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'Mapping debit/credit indicator', 
+    position: 1 
+  } ]
+  Type;
+  
+  @UI.identification: [ {
+    position: 2 , 
+    label: 'Description'
+  } ]
+  @UI.lineItem: [ {
+    position: 2 , 
+    label: 'Description'
+  } ]
+  Description;
+  
+  @UI.identification: [ {
+    position: 3 
+  } ]
+  @UI.lineItem: [ {
+    position: 3 
+  } ]
+  Einvoicequanity;
+  
+  @UI.identification: [ {
+    position: 4 
+  } ]
+  @UI.lineItem: [ {
+    position: 4 
+  } ]
+  Netpricebeforediscount;
+  
+  @UI.identification: [ {
+    position: 5 
+  } ]
+  @UI.lineItem: [ {
+    position: 5 
+  } ]
+  Netpriceafterdiscount;
+  
+  @UI.identification: [ {
+    position: 6 
+  } ]
+  @UI.lineItem: [ {
+    position: 6 
+  } ]
+  Amountbeforetax;
+  
+  @UI.identification: [ {
+    position: 7 
+  } ]
+  @UI.lineItem: [ {
+    position: 7 
+  } ]
+  Taxamount;
+  
+  @UI.identification: [ {
+    position: 8 
+  } ]
+  @UI.lineItem: [ {
+    position: 8 
+  } ]
+  Amountaftertax;
+}

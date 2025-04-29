@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "E-Invoice Auth VNPT - ZEIV05",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zeinvauthvnpt"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_F572CF504082ADF6BC8D3F13229301AEB42A8E61_TM",
+    "semanticObject": "zeinv_config",
+    "action": "auth",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_F572CF504082ADF6BC8D3F13229301AEB42A8E61_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "E-Invoice Auth VNPT - ZEIV05"
+      }
+    }
+  ]
+}

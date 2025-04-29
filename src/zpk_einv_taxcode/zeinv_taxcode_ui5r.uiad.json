@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Loại tax code xuất hoá đơn điện tử - ZEIV06",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zeinvtaxcode"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_EA45EABFB24398644DC65AD6426EC34456BB0E93_TM",
+    "semanticObject": "zeinv_config",
+    "action": "taxcode",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_EA45EABFB24398644DC65AD6426EC34456BB0E93_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Loại tax code xuất hoá đơn điện tử - ZEIV06"
+      }
+    }
+  ]
+}
